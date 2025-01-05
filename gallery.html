@@ -1,0 +1,265 @@
+<html>
+<head>
+    <title>Gallery</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(images/background\ image.jpg);
+            color: #333;
+        }
+
+        /* Header Styles */
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #e42961, #fc257f);
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 35px;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 20px;
+            margin-top: 5px;
+        }
+
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 20px;
+            color: #bf17c5;
+        }
+
+        /* Gallery Styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 0;
+            padding-bottom: 75%; /* Adjust for aspect ratio (4:3) */
+        }
+
+        .gallery-item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-item .caption {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: 1em;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item:hover .caption {
+            opacity: 1;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #e42961;
+            color: white;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+
+        .back-to-home {
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #c90647;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            max-width: 200px;
+            transition: all 0.3s ease;
+        }
+
+        .back-to-home:hover {
+            background-color: #ffcc00;
+            color: #003366;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>My Gallery</h1>
+        <p>A collection of my favorite memories</p>
+    </header>
+
+    <!-- Friends Section -->
+    <section>
+        <h2 class="section-title">FRIENDS</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/gambar friend 1.jpg" alt="Friend 1">
+                <div class="caption">Final project with love</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar friend 2.jpg" alt="Friend 2">
+                <div class="caption">With Zayda Aisyah</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar friend 3.jpg" alt="Friend 3">
+                <div class="caption">With Qarisha</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar friend 4.jpg" alt="Friend 3">
+                <div class="caption">Hiking with my girls</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar friend 5.jpg" alt="Friend 3">
+                <div class="caption">Badminton with my bestfriend</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar friend 6.jpg" alt="Friend 3">
+                <div class="caption">With my soulmate</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar friend 7.jpg" alt="Friend 3">
+                <div class="caption">My classmate</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar friend 8.jpg" alt="Friend 3">
+                <div class="caption">We often go trip together</div>
+            </div>    
+            <div class="gallery-item">
+                <img src="images/gambar friend 9.jpg" alt="Friend 3">
+                <div class="caption">My beloved school friend</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar friend 10.jpg" alt="Friend 3">
+                <div class="caption">Being friend for almost 10 years</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Section -->
+    <section>
+        <h2 class="section-title">BELOVED FAMILY</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/family 1.jpg" alt="Family 1">
+                <div class="caption">Melaka trip</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/family 2.jpg" alt="Family 2">
+                <div class="caption">Family lunch</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/family 3.jpg" alt="Family 3">
+                <div class="caption">With my aunt and cousin</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/family 4.jpg" alt="Family 3">
+                <div class="caption">My big family</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/family 5.jpg" alt="Family 3">
+                <div class="caption">My cousin</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Myself Section -->
+    <section>
+        <h2 class="section-title">MYSELF</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/myself 1.jpg" alt="Myself 1">
+                <div class="caption">Final year project picture</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/myself 2.jpg" alt="Myself 2">
+                <div class="caption">Random picture</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/myself 3.jpg" alt="Myself 3">
+                <div class="caption">Feeding bird</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/myself 4.jpg" alt="Myself 3">
+                <div class="caption">Outing time</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/myself 5.jpg" alt="Myself 3">
+                <div class="caption">Hiking</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">MY FAVOURITE PERSON</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/love picture 1.jpg" alt="Myself 1">
+                <div class="caption">Handsome man</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/love picture 2.jpg" alt="Myself 2">
+                <div class="caption">Cute</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/love picture 3.jpg" alt="Myself 3">
+                <div class="caption">My safe place</div>
+            </div>
+        </div>
+    </section>
+
+    <a href="aisyahwebsite.html" class="back-to-home">Back to Home</a>
+
+    <footer id="contact">
+        <p>Connect with me on social media!</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/aisyhraihnah/">
+                <img src="images/instagram icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/eycah.nana/">
+                <img src="images/facebook icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/@aisyhraihnah">
+                <img src="images/tiktok icon.png" alt="TikTok">
+            </a>
+        </div>
+        <p>&copy; 2024 Aisyah Raihanah. All rights reserved.</p>
+    </footer>
+</body>
+</html>
