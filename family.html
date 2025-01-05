@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A visually appealing mind map of my family members with details and a modern design.">
+    <meta name="keywords" content="Family, Mind Map, Interactive Design">
+    <meta name="author" content="Aisyah Raihanah">
+    <title>Family Members Mind Map</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #ffe5e5, #fef6f6);
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #e42961;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .mindmap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        /* Node Styling */
+        .node {
+            background-color: #e42961;
+            color: #fff;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 15px;
+            width: 280px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .node:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .node img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 4px solid white;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .node h3 {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        .node p {
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .subnodes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .node {
+                width: 80%;
+            }
+
+            .node img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        /* Back to Home Button */
+        .back-to-home {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 12px 25px;
+            background-color: #c90647;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .back-to-home:hover {
+            background-color: #ffcc00;
+            color: #003366;
+        }
+
+        /* Footer Styling */
+        footer {
+            padding: 20px;
+            background: #c24c4c;
+            color: #fff;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Family Mind Map -->
+    <div class="mindmap">
+        <h2>Family Members</h2>
+
+        <!-- Mother -->
+        <div class="node">
+            <h3>Hazira Binti Abdul Hamid (Mother)</h3>
+            <img src="images/with ibu.jpg" alt="Mother's Photo">
+            <p>Age: 53</p>
+            <p>Spends her life with 30 cats and loves eating kuey teow lakna.</p>
+        </div>
+
+        <!-- Subnodes for Siblings -->
+        <div class="subnodes">
+            <!-- First Sister -->
+            <div class="node">
+                <img src="images/kakak picture.jpg" alt="First Sister">
+                <h3>Syafiqah Nadiah Binti Yazid</h3>
+                <p>With her husband Amir Syahmi and son Adrish Naail.</p>
+            </div>
+
+            <!-- Second Sister -->
+            <div class="node">
+                <img src="images/kak tin picture.jpg" alt="Second Sister">
+                <h3>Fatin Hanisah Binti Yazid</h3>
+                <p>With her husband Amirul Asraf and children Adam Falieq and Sara Fieya Amanda.</p>
+            </div>
+
+            <!-- First Brother -->
+            <div class="node">
+                <img src="images/brother 1.jpg" alt="First Brother">
+                <h3>Muhammad Amir Izzat Bin Yazid</h3>
+                <p>Loves working out at the gym and consumes a lot of protein.</p>
+            </div>
+
+            <!-- Second Brother -->
+            <div class="node">
+                <img src="images/brother 2 picture.jpg" alt="Second Brother">
+                <h3>Muhammad Bahjatudin Bin Yazid</h3>
+                <p>Enjoys playing games and spending time with friends.</p>
+            </div>
+        </div>
+
+        <!-- Aisyah's Node -->
+        <div class="node">
+            <img src="images/myself 6.jpg" alt="Aisyah">
+            <h3>Aisyah Raihanah Binti Yazid</h3>
+            <p>Loves animals and taking pictures.</p>
+        </div>
+    </div>
+
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-to-home">Back to Home</a>
+
+    <!-- Footer -->
+    <footer>
+        <p>Connect with me on social media!</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/aisyhraihnah/" target="_blank" aria-label="Instagram">
+                <img src="images/instagram icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/eycah.nana/" target="_blank" aria-label="Facebook">
+                <img src="images/facebook icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/@aisyhraihnah" target="_blank" aria-label="TikTok">
+                <img src="images/tiktok icon.png" alt="TikTok">
+            </a>
+        </div>
+        <p>&copy; 2024 Aisyah Raihanah. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
